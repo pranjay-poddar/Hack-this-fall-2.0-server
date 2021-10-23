@@ -31,8 +31,6 @@
 
 ## Tech Stack
 
-Dillinger uses a number of open source projects to work properly:
-
 -   Frontend : Angular, Typescript, HTML5, CSS3, Bootstrap
 
 -   Backend : Spring boot, Java
