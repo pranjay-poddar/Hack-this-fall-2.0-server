@@ -19,7 +19,7 @@ public class HospitalsService {
 	public Hospitals fetchByEmailId(String email) {
 		return hospitalRepo.findByemailId(email);
 	}
-	//save hospital data
+	//save hospital
 	public Hospitals saveHospital(Hospitals hospital) {
 		return hospitalRepo.save(hospital);
 	}
