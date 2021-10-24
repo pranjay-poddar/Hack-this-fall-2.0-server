@@ -14,8 +14,6 @@ import com.swasthify.Entities.Hospitals;
 public interface HospitalRepo extends JpaRepository<Hospitals, Long>{
 
 	Hospitals findByemailId(String email);
-//	@Query("select new com.swasthify.DTOs.HospitalsDto(hos.id, hos.hospitalName, hos.emailId, hos.city, hos.State, hos.contact, hService.icuBeds) from Hospitals hos join hos.hospServices hService where hos.id = ?1")
-//	public List<HospitalsDto> findHospitalsById(Long id);
 
 	@Query("select new com.swasthify.DTOs.CumulativeServices(h.icuBeds, h.isolationBeds, h.oxygenCylinders, h.vaccine1, h.vaccine2) from Hospitals h")
 	List<CumulativeServices> getAllServices();
