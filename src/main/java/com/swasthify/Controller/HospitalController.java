@@ -42,7 +42,7 @@ public class HospitalController {
 		}
 		return hospService.saveHospital(hosp);
 	}
-	//login hospital
+	//sign in hospital
 	@PostMapping("/login-hospital")
 	public Hospitals loginHospital(@RequestBody Hospitals hosp) throws Exception {
 		String email = hosp.getEmailId();
